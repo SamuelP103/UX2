@@ -1,0 +1,141 @@
+/* about me section */
+
+.about-image-container img {
+  width: 60%;
+}
+.about-image-container img {
+  width: 60%;
+}
+.about-image-container {
+  width: 40%;
+}
+
+.about-desciption-container {
+  width: 40%;
+}
+.about-section {
+  padding: 2rem;
+}
+.center-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.center-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-description-container p {
+  width: 80%;
+  margin: 2rem 0px;
+}
+.tags-container label {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+}
+.tags-container {
+  width: 70%;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.skill-list h2 {
+  font-size: 30px;
+  align-content: center;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin-left: -25%;
+}
+
+.about-desciption-container h2,
+.about-desciption-container h1 {
+  font-size: 30px;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 4%;
+}
+.skill-list {
+  text-align: center;
+  align-items: left;
+  width: 160%;
+  margin-left: -5%;
+}
+
+.project-section {
+  padding: 2rem;
+  background-color: var(--);
+}
+.project-card {
+  width: 25rem;
+  display: flex;
+  padding: 0.1rem;
+  flex-wrap: wrap;
+  border-radius: 1%;
+}
+.project-card:hover {
+  opacity: 0.5;
+  border: solid 1px var(--secondary-color);
+}
+.project-card img {
+  width: 100%;
+  border-radius: 1%;
+}
+.skills-container {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem;
+}
+a p:nth-child(2) {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin: 0.5rem 0px;
+  
+}
+a p:nth-child(3){
+  font-family: italic;
+}
+a p:nth-child(4){
+  font-family: italic;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 0px;
+  
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  background-color: var(--secondary-color-900);
+ 
+  padding: 4%;
+}
+footer .name1{
+  width: 50% ;
+}
+footer nav{
+  width: 50%;
+  
+}
+
+.projects-list{
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+/* font  */

@@ -1,0 +1,42 @@
+
+/* phone */
+@media(max-width:640px){
+    html{
+        font-size: 10px;
+    }
+}
+
+/* tablet */
+@media((min-width:641px) and (max-width)){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media(max-width:1007px){
+    html{
+        font-size: 13px;
+
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about-description-container{
+        width: 100%;
+        margin-top: 4rem;
+    }
+    .project-card{
+        width: 100%;
+
+    }
+    .project-card a img
+{ width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center 50%;
+}
+.project-card a{
+    width: 100%;
+    height: min-content;
+    flex-direction: column;
+}}
