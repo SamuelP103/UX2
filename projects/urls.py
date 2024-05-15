@@ -1,6 +1,9 @@
 from django.urls import path  
 # connects the setting for routing
 from .views import projects_view
+
+from django.conf.urls.static import static
+from django.conf import settings
 # connects views and the function
 
 urlpatterns = [
@@ -13,3 +16,4 @@ urlpatterns = [
 
     
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

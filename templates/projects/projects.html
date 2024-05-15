@@ -10,60 +10,26 @@
 <section class="project-section center-column">
     <h2>Projects</h2>
     <div class="projects-list">
+
+      {% for project in projects %}
       <div class="project-card">
-        <a href="http://github.com/" target="_blank">
-            <img src="{% static 'img/picture-1.jpg' %}" alt="Project Image">
-          <p>First Project Name</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, beatae?</p>
-          <p>YYYY</p>
+        <a href="{{project.repository}}" target="_blank">
+            <img src="{{project.image}}" alt="Project Image">
+          <p>{{project.name}}</p>
+          <p>{{ project.description }}</p>
+          <p>{{ project.year }}</p>
           <br>
           <div class="skill-container">
-            <label>Skill</label>
-            <label>Skill</label>
-            <label>Skill</label>
-            <label>Skill</label>
+            {% for skill in project.skill.all %}
+            <label>{{ skill.name }}</label>
+            {% endfor %}
+            
           </div>
         </a>
       </div>
       </div>
- 
-    
-    <div class="projects-list">
-      <div class="project-card">
-        <a href="http://github.com/" target="_blank">
-            <img src="{% static 'img/picture-1.jpg' %}" alt="Project Image">
-          <p>First Project Name</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, beatae?</p>
-          <p>YYYY</p>
-          <br>
-          <div class="skill-container">
-            <label>Skill</label>
-            <label>Skill</label>
-            <label>Skill</label>
-            <label>Skill</label>
-          </div>
-        </a>
-      </div>
-      </div>
-  
-    
-    <div class="projects-list">
-      <div class="project-card">
-        <a href="http://github.com/" target="_blank">
-            <img src="{% static 'img/picture-1.jpg' %}" alt="Project Image">
-          <p>First Project Name</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, beatae?</p>
-          <p>YYYY</p>
-          <br>
-          <div class="skill-container">
-            <label>Skill</label>
-            <label>Skill</label>
-            <label>Skill</label>
-            <label>Skill</label>
-          </div>
-        </a>
-      </div>
-      </div>
+      <br><br>
+      {% endfor %}
     </section>
 
 
@@ -84,10 +50,10 @@
   </div>
   <nav>
     <div class="nav-link ">
-      <a href="./about1.html">About Me</a>
-      <a href="./projects1.html">Projects</a>
-      <a href="./experience1.html">Experience</a>
-      <a href="./contact1.html">Contact</a>
+      <a href="{% url 'about' %}">About Me</a>
+            <a href="{% url 'projects' %}">Projects</a>
+      <a href="./experience.html">Experience</a>
+      <a href="./contact.html">Contact</a>
     </div>
   </nav>
   
